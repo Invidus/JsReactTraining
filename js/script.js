@@ -62,3 +62,13 @@ function writeYourGenres() {
     }
 }
 writeYourGenres();
+
+
+//callback
+function asking(question, callback) {
+    console.log(question);
+    callback();
+}
+asking('How it`s going', function () {
+    console.log('everything ok');
+})
